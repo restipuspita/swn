@@ -128,7 +128,7 @@
       counter++;
 
       // Potensio
-      db.ref("Potensio/latest").get().then((snap) => {
+      db.ref("Potensio/Latest").get().then((snap) => {
         const nilai = snap.val();
         updateChart(chartPot, timestamp, chartPot.data.datasets[0].data, nilai);
       });
